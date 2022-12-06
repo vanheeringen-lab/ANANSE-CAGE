@@ -8,3 +8,8 @@ Supporting scripts and notebooks detailing how to use ANANSE with CAGE data.
 
 * [model_training_ANANSE-CAGE.ipynb](https://github.com/vanheeringen-lab/ANANSE-CAGE/blob/main/model_training_ANANSE-CAGE.ipynb) - Training of binding prediction model (CAGE data only)
 * [model_training_ANANSE-CAGE-H3K27ac.ipynb](https://github.com/vanheeringen-lab/ANANSE-CAGE/blob/main/model_training_ANANSE-CAGE-H3K27ac.ipynb) - Training of binding prediction model (CAGE and H3K27ac data)
+
+## How to use
+We can generate the necessary input files using the CAGEfightR package. Use [this](https://github.com/vanheeringen-lab/ANANSE-CAGE/blob/main/CAGEfightR_to_ANANSE.Rmd) script as a reference and change it according to your needs. 
+
+To start, you can use .bed files with 6 columns (chr  start end  chr:start..end,strand  tags  strand). For example: chr1	564586	564587	chr1:564586..564587,+	2	+
